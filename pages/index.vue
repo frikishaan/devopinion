@@ -10,6 +10,10 @@ const flag = ref(false);
 
 const netlifyButton = ref(false);
 
+useHead({
+  title: "Dev OPinion - Netlify Dynamic site challenge",
+});
+
 const localVotingState = ref(
   JSON.parse(window.localStorage.getItem("localVotingState")) || {}
 );
